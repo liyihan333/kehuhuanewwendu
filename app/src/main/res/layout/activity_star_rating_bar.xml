@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background"
+    android:orientation="vertical">
+
+    <com.kwsoft.kehuhua.widget.CommonToolbar
+        android:id="@+id/common_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        app:isShowRightButton="false"
+        app:isShowTitle="true">
+
+    </com.kwsoft.kehuhua.widget.CommonToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="匿名评价"
+                    android:textColor="@color/tv_b6b6b6"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ratebar1"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:background="@mipmap/star_ratingbar_full"
+                        android:button="@null" />
+
+                    <Button
+                        android:id="@+id/ratebar2"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_full"
+                        android:button="@null" />
+                    <Button
+                        android:id="@+id/ratebar22"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:background="@mipmap/star_ratingbar_empty"
+                        android:button="@null" />
+
+                    <Button
+                        android:id="@+id/ratebar3"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_full"
+                        android:button="@null" />
+                    <Button
+                        android:id="@+id/ratebar33"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_empty"
+                        android:visibility="gone"
+                        android:button="@null" />
+
+                    <Button
+                        android:id="@+id/ratebar4"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_full"
+                        android:button="@null"
+                        />
+                    <Button
+                        android:id="@+id/ratebar44"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone"
+                        android:background="@mipmap/star_ratingbar_empty"
+                        android:button="@null"
+                        />
+
+                    <Button
+                        android:id="@+id/ratebar5"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_full"
+                        android:button="@null" />
+                    <Button
+                        android:id="@+id/ratebar55"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/star_ratingbar_empty"
+                        android:button="@null"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+                <!--<RatingBar-->
+                <!--android:id="@+id/rb_ratingbar"-->
+                <!--style="@style/foodRatingBar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:numStars="5"-->
+                <!--android:rating="3"-->
+                <!--android:stepSize="1.0" />-->
+
+
+                <TextView
+                    android:id="@+id/tv_assess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:text="非常满意，无可挑剔"
+                    android:textColor="@color/tv_b6b6b6"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@color/tv_dedede">
+
+                </View>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="5dp"
+                    android:background="@mipmap/star_rating_horn" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@color/tv_dedede">
+
+                </View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cb_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_cb_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_first_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="上课无计划"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_first_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="备课不认真"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_first_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="迟到"
+                            android:textColor="@color/checkb_color_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_first_rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="早退"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_first_rb5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="上课玩手机"
+                            android:textColor="@color/checkb_color_selector" />
+                        <!--</RadioGroup>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cb_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_sec_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="备课不认真"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_sec_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="上课缺少互动"
+                            android:textColor="@color/checkb_color_selector" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_sec_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="上课玩手机"
+                            android:textColor="@color/checkb_color_selector" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cb_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_third_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="耐心负责"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_third_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="上课玩手机"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_third_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="着装邋遢"
+                            android:textColor="@color/checkb_color_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_third_rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="语速过快"
+                            android:textColor="@color/checkb_color_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cb_forth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="备课认真"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="教学专业"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="讲解清晰"
+                            android:textColor="@color/checkb_color_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="穿着正式"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="着装邋遢"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_forth_rb6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="语速过快"
+                            android:textColor="@color/checkb_color_selector" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cb_fifth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_fifth_rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="备课认真"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_fifth_rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="教学专业"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_fifth_rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="穿着正式"
+                            android:textColor="@color/checkb_color_selector" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_marginTop="17dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_fifth_rb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="讲解清晰"
+                            android:textColor="@color/checkb_color_selector" />
+
+                        <CheckBox
+                            android:id="@+id/cb_fifth_rb5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/sel_radio_group_selector"
+                            android:button="@null"
+                            android:paddingBottom="9dp"
+                            android:paddingLeft="11dp"
+                            android:paddingRight="11dp"
+                            android:paddingTop="9dp"
+                            android:text="语速过快"
+                            android:textColor="@color/checkb_color_selector" />
+                        <!--</RadioGroup>-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"-->
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/bg_et_rating_bar"
+                android:gravity="top"
+                android:hint="有哪些话要对我们说"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="8dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/tv_b6b6b6"
+                android:textColorHint="@color/tv_b6b6b6"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_ratingbar_first"
+                android:text="确定评价"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

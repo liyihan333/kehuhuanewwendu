@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_stage_text_item"
+        android:orientation="vertical"
+        android:paddingBottom="29dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="16dp"
+                android:background="@color/bg_1b478e" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="15dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="少儿一对一英语基础班"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="18dp"-->
+                    <!--android:layout_height="18dp"-->
+                    <!--android:src="@mipmap/basics_into" />-->
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teach_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程名称"
+                    android:textColor="@color/list_item_right"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_teach_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:text="课程"
+                    android:textColor="@color/list_item_left"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_ping_jia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星级平均分"
+                    android:textColor="@color/list_item_right"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/star_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="21dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/star0"
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/star_ratingbar_full" />
+                    <View
+                        android:id="@+id/star1"
+                        android:layout_width="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/star_ratingbar_full" />
+                    <View
+                        android:id="@+id/star2"
+                        android:layout_width="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/star_ratingbar_full" />
+                    <View
+                        android:id="@+id/star3"
+                        android:layout_width="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/star_ratingbar_full" />
+                    <View
+                        android:id="@+id/star4"
+                        android:layout_width="16dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/star_ratingbar_full" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">wenduteach</string>
+    <string name="textView_null">没有数据!</string>
+    <string name="please_wait">请等待...</string>
+    <string name="data_refresh">数据刷新!</string>
+    <string name="data_refreshing">数据正在刷新...</string>
+    <string name="data_will_refresh">松开刷新...</string>
+    <string name="Pull_down_refresh">下拉刷新</string>
+    <string name="no_network">没有网络!</string>
+    <string name="permission_Access_failed">权限打开失败!</string>
+    <string name="permission_Access_success">权限打开成功!</string>
+    <string name="datas">数据</string>
+    <string name="count_datas_refreshed">条数据已刷新！</string>
+    <string name="project_link_error">当前项目链接出错！</string>
+    <string name="network_no_available">网络不可用，请检查！</string>
+
+    <string name="login_hint_first">请输入手机号</string>
+    <string name="login_hint_sec">请输入您的密码</string>
+    <string name="login_text">登录</string>
+
+    <string name="teach_home">首页</string>
+    <string name="teach_function">功能管理</string>
+    <string name="teach_schedule">课程表</string>
+    <string name="teach_me">我</string>
+
+    <string name="to_do_task">待办任务</string>
+
+    <string name = "MON">星期一</string>
+    <string name = "TUE">星期二</string>
+    <string name = "WED">星期三</string>
+    <string name = "THU">星期四</string>
+    <string name = "FRI">星期五</string>
+    <string name = "SAT">星期六</string>
+    <string name = "SUN">星期日</string>
+
+    <string name = "profile">个人资料</string>
+    <string name = "password">修改密码</string>
+    <string name = "old_password">旧密码</string>
+    <string name = "new_password">新密码</string>
+    <string name = "confirm_password">确认密码</string>
+    <string name = "retype_password">重新输入密码</string>
+    <string name = "Feedback">意见反馈</string>
+    <string name = "clear_cache">清除缓存</string>
+    <string name = "confirm_delete">This is an irreversible operation. Are you sure to delete?</string>
+    <string name = "delete">删除</string>
+    <string name = "version">当前版本</string>
+    <string name = "log_out">退出登录</string>
+
+    <string name="course_month">月</string>
+    <string name="personal_information">个人资料</string>
+    <string name="personal_information_modify">修改</string>
+    <string name="re_pwd_title">修改密码</string>
+    <string name="re_pwd_confirm">确认</string>
+    <string name="no_school">暂无校区</string>
+
+    <string name="start_school">入学须知</string>
+    <string name="i_known">我知道了！</string>
+
+    <string name="no_attachment">暂无附件！</string>
+
+
+</resources>

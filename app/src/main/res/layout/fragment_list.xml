@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kwsoft.kehuhua.fragments.ListFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/list_background">
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/search_munion_item_selector"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            />
+        <com.cjj.MaterialRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay="true"
+            app:wave_color="@android:color/transparent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/activity_list_item"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.cjj.MaterialRefreshLayout>
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

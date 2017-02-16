@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\qrcode_default_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-qrcodecore\\1.1.6\\res\\mipmap-xxhdpi-v4\\qrcode_default_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\logo.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\logo.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\qrcode_default_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-qrcodecore\\1.1.6\\res\\mipmap-xxhdpi-v4\\qrcode_default_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\custom_grid_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\custom_grid_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\holder.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\holder.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\custom_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\custom_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\holder.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\holder.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\test_isbn.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\test_isbn.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\test_isbn.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\test_isbn.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\logo.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\logo.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\qrcode_default_grid_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\zxingdemo\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-qrcodecore\\1.1.6\\res\\mipmap-xxhdpi-v4\\qrcode_default_grid_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\qrcode_default_grid_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\exploded-aar\\cn.bingoogolapple\\bga-qrcodecore\\1.1.6\\res\\mipmap-xxhdpi-v4\\qrcode_default_grid_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\custom_grid_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\custom_grid_scan_line.png"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-xxhdpi-v4\\custom_scan_line.png",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\zxingdemo\\build\\intermediates\\bundles\\debug\\res\\mipmap-xxhdpi-v4\\custom_scan_line.png"
+    }
+]

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kwsoft.kehuhua.adcustom.TreeViewActivity">
+
+    <com.kwsoft.kehuhua.widget.CommonToolbar
+        android:id="@+id/common_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        app:isShowRightButton="true"
+        app:isShowTitle="true">
+    </com.kwsoft.kehuhua.widget.CommonToolbar>
+
+    <ListView
+        android:id="@+id/list_tree"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="#00000000"
+        android:layout_below="@+id/common_toolbar"
+        android:dividerHeight="2dip"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:listSelector="#bdd5e1" />
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context="com.kwsoft.kehuhua.fragments.CoursesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <Button
+       android:id="@+id/requestSession"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="获取session"
+
+       />
+
+    <Button
+        android:id="@+id/requestSession2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取session2"
+
+        />
+</android.support.v7.widget.LinearLayoutCompat>

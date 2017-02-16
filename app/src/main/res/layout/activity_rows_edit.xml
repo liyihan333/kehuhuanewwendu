@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.kwsoft.kehuhua.adcustom.RowsEditActivity">
+    <RelativeLayout
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:background="#393F4D">
+        <ImageView
+            android:id="@+id/tv_cancel_edit"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/button_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="修改"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+        <!--tv_commit-->
+        <ImageView
+            android:id="@+id/tv_commit_edit"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="16dp"
+            android:src="@drawable/edit_commit"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/edit_title">
+
+        <ListView
+            android:id="@+id/lv_edit_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:smoothScrollbar="true"
+            />
+    </RelativeLayout>
+    <!--android:dividerHeight="1dp"-->
+    <!--android:divider="#e2e2e2"-->
+
+    <RelativeLayout
+        android:id="@+id/edit_cover_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50323232"
+        android:layout_below="@+id/edit_title"
+        android:clickable="true"
+        android:visibility="gone"
+         >
+        <TextView
+            android:id="@+id/edit_cover_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

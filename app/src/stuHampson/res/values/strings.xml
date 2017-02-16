@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">wendustu</string>
+    <string name="textView_null">暂时没有数据!</string>
+    <string name="please_wait">请稍等...</string>
+    <string name="data_refresh">数据已刷新!</string>
+    <string name="data_refreshing">数据正在刷新...</string>
+    <string name="data_will_refresh">松开将要刷新</string>
+    <string name="Pull_down_refresh">松开以刷新</string>
+    <string name="no_network">无网络!</string>
+    <string name="Access_failed">获取权限失败!</string>
+    <string name="datas">数据</string>
+    <string name="count_datas_refreshed">条数据已刷新！</string>
+    <string name="project_link_error">当前项目链接可能出错！</string>
+    <string name="network_no_available">当前网络不可用，请检查网络！</string>
+
+    <string name="login_hint_first">请输入手机号</string>
+    <string name="login_hint_sec">请输入您的密码</string>
+    <string name="login_text">登录</string>
+
+    <string name="course_month">月</string>
+    <string name="personal_information">个人资料</string>
+    <string name="personal_information_modify">修改</string>
+    <string name="re_pwd_confirm">确认</string>
+
+    <string name = "delete">删除</string>
+    <string name="permission_Access_failed">权限打开失败!</string>
+    <string name="permission_Access_success">权限打开成功!</string>
+
+</resources>

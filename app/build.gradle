@@ -1,0 +1,191 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.kwsoft.kehuhua.adcustom"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(output.outputFile.parent, defaultConfig.applicationId + "-" + buildType.name + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk");
+        }
+    }
+
+//命名不能与已存在的Build Type或者androidTest这个sourceSet有冲突
+//    ProductFlavor类型的android.productFlavors.*对象与android.defaultConfig对象的类型是相同的。这意味着它们共享相同的属性。
+//
+//    defaultConfig为所有的flavor提供基本的配置，每一个flavor都可以重设这些配置的值
+//    applicationId "com.kwsoft.version.teachWendu"
+    productFlavors {
+        teachHampson {
+            applicationId "com.kwsoft.version.teachWenduStand"
+            resValue "string", "app_name", "文都教师端"
+            versionName "1.0.0"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "b941bcd18c4aec39146fb25c", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default1", //暂时填写默认值即可.
+            ]
+        }
+
+        stuHampson {
+            applicationId "com.kwsoft.version.stuWenduStand"
+            resValue "string", "app_name", "汉普森学员端"
+            versionName "1.0.0"
+            manifestPlaceholders = [
+                    JPUSH_PKGNAME: applicationId,
+                    JPUSH_APPKEY : "b4c836415024e6ee357da5aa", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+            ]
+        }
+    }
+//    lintOptions {
+//        checkReleaseBuilds false
+//        // Or, if you prefer, you can continue to check for errors in release builds,
+//        // but continue the build even when errors are found:
+//        abortOnError false
+//    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/java']
+            aidl.srcDirs = ['src/main/java']
+            renderscript.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs = ['libs']
+
+        }
+        teachHampson.manifest.srcFile 'src/teachHampson/AndroidManifest.xml'
+        teachHampson.java.srcDirs = ['src/teachHampson/java']
+        teachHampson.res.srcDirs = ['src/teachHampson/res']
+        stuHampson.manifest.srcFile 'src/stuHampson/AndroidManifest.xml'
+        stuHampson.java.srcDirs = ['src/stuHampson/java']
+        stuHampson.res.srcDirs = ['src/stuHampson/res']
+
+
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+//    dexOptions { preDexLibraries = false}
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "2048M"
+    }
+}
+
+//assets.srcDirs = ['src/main/assets']
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/volley.jar')
+    //volley网络请求框架
+    compile files('libs/fastjson-1.2.7.jar')
+    //阿里巴巴类型转换工具
+    //    compile 'com.google.android.gms:play-services:8.4.0'
+    compile files('libs/gson-2.3.1-sources.jar')
+    //谷歌类型转换工具
+    compile files('libs/gson-2.3.1.jar')
+    //谷歌类型转换工具
+    compile project(path: ':library')
+    compile project(path: ':weekcalendar')
+    compile project(path: ':mp3Recorder')
+    //日历控件，课程表工具
+    compile files('libs/badgeview.jar')
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    //recyclerView，取代ListView
+    compile 'com.android.support:cardview-v7:25.0.1'
+    //cardView，暂时没用
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //注解控件工具
+    compile 'cn.qqtheme.framework:AndroidPicker:latest.integration'
+    compile 'com.github.flavienlaurent.datetimepicker:library:0.0.2'
+    //时间日期插件
+    compile 'com.github.bmelnychuk:atv:1.2.9'
+    compile 'com.wang.avi:library:1.0.5'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //升级版SwipeRefreshLayout
+    compile('org.apache.httpcomponents:httpmime:4.3.6') {//文件上传http1
+        exclude module: 'httpclient'
+    }
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
+    //文件上传http2
+    compile files('libs/org.apache.http.legacy.jar')
+    //文件上传http3
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //照片选择和预览1
+    compile 'me.iwf.photopicker:PhotoPicker:0.8.10@aar'
+    //照片选择和预览2
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    //照片选择和预览3
+    compile 'com.lovedise:permissiongen:0.0.6'
+    //解决6.0相机和存储卡权限问题
+    compile 'com.sangbo.autoupdate:autoUpdate:1.0.1'
+    //自动更新
+    compile 'com.zhy:okhttputils:2.6.2'
+    //okHttp组件
+    compile 'com.pgyersdk:sdk:2.4.0'
+    //蒲公英自动更新
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    //图片加载控件  facebook
+    compile 'me.relex:photodraweeview:1.1.2'
+    //图片放大
+    compile 'com.android.support:multidex:1.0.1'
+    //Google官方出的分包方案
+    compile files('libs/flame.jar')
+    //mp3转码
+    compile('org.kymjs.kjframe:kjframe:2.6')
+    //清理缓存
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.0'
+    //cookie支持
+    compile 'cn.jiguang.sdk:jpush:3.0.0'  // 此处以JPush 3.0.0 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.0.0'  // 此处以JCore 1.0.0 版本为例。
+    compile 'com.google.android.gms:play-services-maps:10.0.1'//解决大图加载问题
+    compile 'com.google.android.gms:play-services-location:10.0.1'//解决大图加载问题
+
+    //扫码
+    compile project(path: ':zxingdemo')
+}

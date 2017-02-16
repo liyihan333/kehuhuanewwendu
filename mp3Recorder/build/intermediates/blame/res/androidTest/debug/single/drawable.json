@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_item_audiorecord_normal.xml",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_item_audiorecord_normal.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_item_audiorecord_normal.xml",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_item_audiorecord_normal.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_audiorecord.xml",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_audiorecord.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_audiorecord.xml",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_audiorecord.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_item_audiorecord_pressed.xml",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_item_audiorecord_pressed.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_item_audiorecord_pressed.xml",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_item_audiorecord_pressed.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\anim_play_audio.xml",
+        "source": "D:\\kehuhua\\kehuhuanewwendu\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\anim_play_audio.xml"
+    },
+    {
+        "merged": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\anim_play_audio.xml",
+        "source": "D:\\kehuhua\\kehuhuanewmain\\mp3Recorder\\build\\intermediates\\bundles\\debug\\res\\drawable\\anim_play_audio.xml"
+    }
+]

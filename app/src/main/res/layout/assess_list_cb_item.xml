@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sel_radio_group_selector"
+    android:button="@null"
+    android:paddingBottom="9dp"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    android:paddingTop="9dp"
+    android:textSize="16sp"
+    android:text="一般"
+    android:textColor="#ff8a18" >
+
+
+    </TextView>

@@ -1,0 +1,76 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+    <activity
+        android:name="com.kwsoft.version.StartActivity"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:label="@string/app_name"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+        <activity android:name="com.kwsoft.version.GuideActivity"/>
+        <activity android:name="com.kwsoft.version.StuLoginActivity"/>
+        <activity android:name="com.kwsoft.version.StuProLoginActivity"/>
+        <activity android:name="com.kwsoft.version.ResetPwdActivity">
+
+        </activity>
+        <activity android:name="com.kwsoft.version.StuInfoActivity">
+
+        </activity>
+        <activity android:name="com.kwsoft.version.StuMainActivity">
+
+        </activity>
+        <activity android:name="com.kwsoft.version.UpdatePasswordActivity">
+
+        </activity>
+        <activity android:name="com.kwsoft.version.FeedbackActivity">
+
+        </activity>
+        <activity android:name="com.kwsoft.version.TodayCourseTableActivity"/>
+
+        <activity android:name="com.kwsoft.kehuhua.hampson.activity.KanBanLRActivity"/>
+        <activity android:name="com.kwsoft.kehuhua.hampson.activity.TeachAmountDetailActivity"/>
+      <activity android:name="com.kwsoft.version.zxing.TestScanActivity"/>
+
+        <receiver
+            android:name="com.kwsoft.version.edusReceiver.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.kwsoft.version.teachWendu" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace" >
+
+        </service>
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="f6c68a067dd85f7a31460c706c5af11e" >
+        </meta-data>
+</application>
+
+</manifest>

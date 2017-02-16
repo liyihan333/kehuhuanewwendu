@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/course_left_margin"
+        android:layout_marginTop="66dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/course_bg_title"
+            android:textSize="140sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@+id/add_item_title">
+
+        <RelativeLayout
+            android:id="@+id/layout_date"
+            android:layout_width="@dimen/course_left_margin"
+            android:layout_height="match_parent"
+            android:background="@color/course_bg_title">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#5ca7ff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="月"
+                    android:textColor="#5ca7ff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="@dimen/course_left_margin"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                android:text="00:00"
+                android:textSize="@dimen/fragment_left_text_size"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <noman.weekcalendar.WeekCalendar
+            android:id="@+id/weekCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_toRightOf="@id/layout_date"
+            android:background="#f5f5f5"
+            android:paddingLeft="1dp"
+            app:dayNameLength="singleLetter"
+            app:daysBackgroundColor="#f5f5f5"
+            app:daysTextColor="#a3a3a3"
+            app:numOfPages="150"
+            app:selectedBgColor="#5ca7ff"
+            app:todaysDateBgColor="#8488ff"
+            app:weekBackgroundColor="#f5f5f5"
+            app:weekTextColor="#5b5b5b"
+            app:weekTextSize="12sp" />
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/course_left_margin"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/course_line_3" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/myScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_left"
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="08:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="08:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="09:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="09:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="10:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="10:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="11:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="11:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="12:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="12:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="13:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="13:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="14:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="14:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="15:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="15:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="16:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="16:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="17:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="17:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="18:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="18:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="19:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="19:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="20:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="20:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="21:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="21:30"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/course_left_margin"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_bg_title" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/course_line_3" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="33dp"
+                        android:background="@color/course_bg_title"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="22:00"
+                        android:textColor="@color/couse_time"
+                        android:textSize="@dimen/fragment_left_text_size" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_course_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_model1"
+                        android:layout_width="@dimen/course_left_margin"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/fragment_left_pad_left_text_size"
+                        android:paddingRight="@dimen/fragment_left_pad_right_text_size"
+                        android:paddingTop="@dimen/fragment_left_pad_top_text_size"
+                        android:text="00:00"
+                        android:textSize="@dimen/fragment_left_text_size"
+                        android:visibility="invisible" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/tv_model1"
+                        android:background="@color/course_line_3" />
+                    <RelativeLayout
+                        android:id="@+id/layout_course_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="972dp"
+                       >
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/layout_course_info"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="972dp"-->
+                    <!--android:layout_toRightOf="@+id/view">-->
+            </FrameLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+    <!--<RelativeLayout-->
+
+    <!--android:id="@+id/avloadingIndicatorViewLayoutCourse"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#50323232"-->
+    <!--android:visibility="gone"-->
+    <!--&gt;-->
+    <!--<com.wang.avi.AVLoadingIndicatorView-->
+    <!--android:id="@+id/avloadingIndicatorView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--app:indicator="LineScale"-->
+    <!--app:indicator_color="@color/blue"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>
+
