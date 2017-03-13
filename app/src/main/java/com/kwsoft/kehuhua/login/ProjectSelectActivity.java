@@ -33,8 +33,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import cn.jpush.android.api.JPushInterface;
 import okhttp3.Call;
 
 public class ProjectSelectActivity extends BaseActivity implements OnRefreshListener, View.OnClickListener {
@@ -71,17 +69,17 @@ public class ProjectSelectActivity extends BaseActivity implements OnRefreshList
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        JPushInterface.onResume(getApplicationContext());
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        JPushInterface.onPause(getApplicationContext());
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        JPushInterface.onResume(getApplicationContext());
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        JPushInterface.onPause(getApplicationContext());
+//    }
 
     class MyPagerAdapter extends PagerAdapter{
 

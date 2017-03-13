@@ -15,7 +15,7 @@ public class SwitchStatueCode {
     public static void netToast(Activity activity) {
 
         switch(statusCode){
-            case 500:Toast.makeText(activity, "服务器内部错误",Toast.LENGTH_SHORT).show();break;
+           // case 500:Toast.makeText(activity, "服务器内部错误",Toast.LENGTH_SHORT).show();break;
             case 501:Toast.makeText(activity, "服务器无法识别请求",Toast.LENGTH_SHORT).show();break;
             case 502:Toast.makeText(activity, "服务器网关错误",Toast.LENGTH_SHORT).show();break;
             case 503:Toast.makeText(activity, "服务器暂时不可用",Toast.LENGTH_SHORT).show();break;

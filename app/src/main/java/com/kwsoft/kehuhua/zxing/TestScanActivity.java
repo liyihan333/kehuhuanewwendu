@@ -127,7 +127,12 @@ public class TestScanActivity extends BaseActivity implements QRCodeView.Delegat
                             Map<String, Object> errorMap = JSON.parseObject(response,
                                     new TypeReference<Map<String, Object>>() {
                                     });
-                            Toast.makeText(TestScanActivity.this, String.valueOf(errorMap.get("info")), Toast.LENGTH_SHORT).show();
+                            if (errorMap.containsKey("info")) {
+                                Toast.makeText(TestScanActivity.this, String.valueOf(errorMap.get("info")), Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(TestScanActivity.this, String.valueOf(errorMap.get("message")), Toast.LENGTH_SHORT).show();
+                            }
+                           // Toast.makeText(TestScanActivity.this, String.valueOf(errorMap.get("info")), Toast.LENGTH_SHORT).show();
                             finish();
                         }
                     });

@@ -19,7 +19,6 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.jpush.android.api.JPushInterface;
 import okhttp3.Call;
 
 public class TestActivity extends BaseActivity {

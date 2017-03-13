@@ -45,28 +45,28 @@
         <activity android:name="com.kwsoft.kehuhua.hampson.activity.TeachAmountDetailActivity"/>
       <activity android:name="com.kwsoft.version.zxing.TestScanActivity"/>
 
-        <receiver
-            android:name="com.kwsoft.version.edusReceiver.MyReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
-                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
-                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
-                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
-                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="com.kwsoft.version.teachWendu" />
-            </intent-filter>
-        </receiver>
+        <!--<receiver-->
+            <!--android:name="com.kwsoft.version.edusReceiver.MyReceiver"-->
+            <!--android:enabled="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.intent.REGISTRATION" /> &lt;!&ndash; Required  用户注册SDK的intent &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> &lt;!&ndash; Required  用户接收SDK消息的intent &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> &lt;!&ndash; Required  用户接收SDK通知栏信息的intent &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> &lt;!&ndash; Required  用户打开自定义通知栏的intent &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> &lt;!&ndash; Optional 用户接受Rich Push Javascript 回调函数的intent &ndash;&gt;-->
+                <!--<action android:name="cn.jpush.android.intent.CONNECTION" /> &lt;!&ndash; 接收网络变化 连接/断开 since 1.6.3 &ndash;&gt;-->
+                <!--<category android:name="com.kwsoft.version.teachWendu" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
 
 
 
-        <service
-            android:name="cn.jpush.android.service.PushService"
-            android:process=":multiprocess"
-            tools:node="replace" >
+        <!--<service-->
+            <!--android:name="cn.jpush.android.service.PushService"-->
+            <!--android:process=":multiprocess"-->
+            <!--tools:node="replace" >-->
 
-        </service>
+        <!--</service>-->
         <meta-data
             android:name="PGYER_APPID"
             android:value="f6c68a067dd85f7a31460c706c5af11e" >

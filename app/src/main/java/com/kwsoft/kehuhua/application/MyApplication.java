@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import cn.jpush.android.api.JPushInterface;
 import okhttp3.OkHttpClient;
 
 import static com.kwsoft.kehuhua.config.Constant.sysUrl;
@@ -35,8 +34,8 @@ public class MyApplication extends Application {
         super.onCreate();
         mContext=getApplicationContext();
 //        Fresco.initialize(getApplicationContext());//拍照上传初始化
-        JPushInterface.setDebugMode(true);    // 设置开启日志,发布时请关闭日志
-        JPushInterface.init(this);            // 初始化 JPush
+        //JPushInterface.setDebugMode(true);    // 设置开启日志,发布时请关闭日志
+        //JPushInterface.init(this);            // 初始化 JPush
         Log.e(TAG, "onCreate: 已经初始化推送");
         Log.e(TAG, "onCreate: "+getApplicationInfo());
         initOkHttp();

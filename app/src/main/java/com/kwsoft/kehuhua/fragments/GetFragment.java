@@ -32,7 +32,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cn.jpush.android.api.JPushInterface;
+//import cn.jpush.android.api.JPushInterface;
 import okhttp3.Call;
 
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
@@ -214,8 +214,8 @@ public class GetFragment extends Fragment implements View.OnClickListener {
 
             Intent intent = new Intent(getActivity(), TestActivity.class);
             Bundle bundle = new Bundle();
-            bundle.putString(JPushInterface.EXTRA_NOTIFICATION_TITLE, mValues.get(position).get("title") + "");
-            bundle.putString(JPushInterface.EXTRA_ALERT, mValues.get(position).get("content") + "");
+//            bundle.putString(JPushInterface.EXTRA_NOTIFICATION_TITLE, mValues.get(position).get("title") + "");
+//            bundle.putString(JPushInterface.EXTRA_ALERT, mValues.get(position).get("content") + "");
 
             bundle.putString("dateStr", mValues.get(position).get("dateStr") + "");
             bundle.putString("notice_name", mValues.get(position).get("notice_name") + "");
